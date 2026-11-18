@@ -74,8 +74,7 @@ function App() {
     {
       icon: Receipt,
       title: "Transaction History",
-      description:
-        "Find your previous transactions whenever you need them.",
+      description: "Find your previous transactions whenever you need them.",
     },
     {
       icon: ShieldCheck,
@@ -108,7 +107,6 @@ function App() {
 
   return (
     <main className="website">
-
       {/* NAVBAR */}
 
       <nav className="navbar">
@@ -135,7 +133,10 @@ function App() {
             About
           </a>
 
-          <a href="https://drive.google.com/uc?export=download&id=1KEltppVzKFkqQmukhulfAnl1nyL0mQnT" onClick={() => setMenuOpen(false)}>
+          <a
+            href="https://github.com/Afrozbro/money-tracker-downloads/releases/download/v1.0.0/money_tracker.apk"
+            onClick={() => setMenuOpen(false)}
+          >
             Download
           </a>
         </div>
@@ -149,7 +150,10 @@ function App() {
             {theme === "dark" ? <Sun size={19} /> : <Moon size={19} />}
           </button>
 
-          <a href="https://drive.google.com/uc?export=download&id=1KEltppVzKFkqQmukhulfAnl1nyL0mQnT" className="nav-download">
+          <a
+            href="https://github.com/Afrozbro/money-tracker-downloads/releases/download/v1.0.0/money_tracker.apk"
+            className="nav-download"
+          >
             Download App <Download size={16} />
           </a>
 
@@ -166,7 +170,6 @@ function App() {
       {/* HERO SECTION */}
 
       <section className="hero">
-
         <div className="hero-background">
           <div className="hero-glow glow-one"></div>
           <div className="hero-glow glow-two"></div>
@@ -174,7 +177,6 @@ function App() {
         </div>
 
         <div className="hero-content">
-
           <div className="hero-badge">
             <Sparkles size={15} />
             <span>Your Money. Your Control.</span>
@@ -185,21 +187,20 @@ function App() {
             <br />
             Your Money.
             <br />
-
-            <span className="gradient-text">
-              Own Your Future.
-            </span>
+            <span className="gradient-text">Own Your Future.</span>
           </h1>
 
           <p className="hero-description">
-            Every rupee matters. Track your income, expenses, and
-            balance effortlessly with Money Tracker.
-            Simple money management starts here.
+            Every rupee matters. Track your income, expenses, and balance
+            effortlessly with Money Tracker. Simple money management starts
+            here.
           </p>
 
           <div className="hero-buttons">
-
-            <a href="https://drive.google.com/uc?export=download&id=1KEltppVzKFkqQmukhulfAnl1nyL0mQnT" className="primary-button">
+            <a
+              href="https://github.com/Afrozbro/money-tracker-downloads/releases/download/v1.0.0/money_tracker.apk"
+              className="primary-button"
+            >
               <Download size={19} />
               Download for Android
               <ChevronRight size={18} />
@@ -209,11 +210,9 @@ function App() {
               <Play size={17} />
               Explore App
             </a>
-
           </div>
 
           <div className="hero-trust">
-
             <div className="trust-icon">
               <ShieldCheck size={18} />
             </div>
@@ -222,15 +221,12 @@ function App() {
               <strong>Simple. Smart. Organized.</strong>
               <span>Your personal money management companion.</span>
             </div>
-
           </div>
-
         </div>
 
         {/* DASHBOARD PREVIEW */}
 
         <div className="hero-visual" id="preview">
-
           <div className="visual-orbit orbit-one"></div>
           <div className="visual-orbit orbit-two"></div>
 
@@ -257,12 +253,9 @@ function App() {
           </div>
 
           <div className="dashboard-card">
-
             <div className="dashboard-top">
               <div>
-                <span className="dashboard-label">
-                  Total Balance
-                </span>
+                <span className="dashboard-label">Total Balance</span>
 
                 <h2>₹45,850.00</h2>
 
@@ -280,7 +273,6 @@ function App() {
             <div className="dashboard-divider"></div>
 
             <div className="dashboard-stats">
-
               <div className="stat-box">
                 <div className="stat-heading">
                   <span className="small-stat-icon green">
@@ -302,7 +294,6 @@ function App() {
 
                 <strong>₹12,650</strong>
               </div>
-
             </div>
 
             <div className="transaction-header">
@@ -311,10 +302,8 @@ function App() {
             </div>
 
             <div className="transactions">
-
               {transactions.map((item, index) => (
                 <div className="transaction" key={index}>
-
                   <div className={`transaction-icon ${item.type}`}>
                     {item.type === "income" ? (
                       <ArrowDownLeft size={18} />
@@ -337,10 +326,8 @@ function App() {
                   >
                     {item.amount}
                   </strong>
-
                 </div>
               ))}
-
             </div>
 
             <div className="dashboard-footer">
@@ -350,7 +337,6 @@ function App() {
 
               <span>Stay on top of your finances.</span>
             </div>
-
           </div>
 
           <div className="floating-coin coin-one">
@@ -360,15 +346,12 @@ function App() {
           <div className="floating-coin coin-two">
             <PiggyBank size={25} />
           </div>
-
         </div>
-
       </section>
 
       {/* FEATURES */}
 
       <section className="features-section" id="features">
-
         <div className="section-heading">
           <div className="section-badge">POWERFUL FEATURES</div>
 
@@ -379,13 +362,12 @@ function App() {
           </h2>
 
           <p>
-            Manage your daily finances without complicated
-            spreadsheets or confusing tools.
+            Manage your daily finances without complicated spreadsheets or
+            confusing tools.
           </p>
         </div>
 
         <div className="features-grid">
-
           {features.map((feature, index) => {
             const Icon = feature.icon;
 
@@ -406,21 +388,16 @@ function App() {
                 <div className="feature-arrow">
                   <ChevronRight size={19} />
                 </div>
-
               </div>
             );
           })}
-
         </div>
-
       </section>
 
       {/* ABOUT SECTION */}
 
       <section className="about-section" id="about">
-
         <div className="about-visual">
-
           <div className="about-circle">
             <Wallet size={70} />
           </div>
@@ -434,11 +411,9 @@ function App() {
             <ShieldCheck size={17} />
             Your finances organized
           </div>
-
         </div>
 
         <div className="about-content">
-
           <div className="section-badge">WHY MONEY TRACKER?</div>
 
           <h2>
@@ -448,13 +423,11 @@ function App() {
           </h2>
 
           <p>
-            Managing money should not be complicated.
-            Money Tracker makes it easier to understand
-            where your money comes from and where it goes.
+            Managing money should not be complicated. Money Tracker makes it
+            easier to understand where your money comes from and where it goes.
           </p>
 
           <div className="about-points">
-
             <div>
               <Check size={18} />
               Record income and expenses easily.
@@ -474,25 +447,23 @@ function App() {
               <Check size={18} />
               Manage your finances in one application.
             </div>
-
           </div>
 
-          <a href="https://drive.google.com/uc?export=download&id=1KEltppVzKFkqQmukhulfAnl1nyL0mQnT" className="primary-button">
+          <a
+            href="https://github.com/Afrozbro/money-tracker-downloads/releases/download/v1.0.0/money_tracker.apk"
+            className="primary-button"
+          >
             Get Started <ChevronRight size={18} />
           </a>
-
         </div>
-
       </section>
 
       {/* DOWNLOAD SECTION */}
 
       <section className="download-section" id="download">
-
         <div className="download-glow"></div>
 
         <div className="download-content">
-
           <div className="section-badge download-badge">
             <Smartphone size={15} />
             YOUR FINANCIAL COMPANION
@@ -507,14 +478,13 @@ function App() {
           </h2>
 
           <p>
-            Make every rupee count. Download Money Tracker
-            and take your first step towards better money management.
+            Make every rupee count. Download Money Tracker and take your first
+            step towards better money management.
           </p>
 
           <div className="download-buttons">
-
             <a
-              href="https://drive.google.com/uc?export=download&id=1KEltppVzKFkqQmukhulfAnl1nyL0mQnT"
+              href="https://github.com/Afrozbro/money-tracker-downloads/releases/download/v1.0.0/money_tracker.apk"
               className="download-main-button"
               download
             >
@@ -525,14 +495,12 @@ function App() {
                 <strong>Android APK</strong>
               </div>
             </a>
-
           </div>
 
           <div className="download-note">
             <ShieldCheck size={16} />
             Your personal finance companion.
           </div>
-
         </div>
 
         <div className="download-decoration">
@@ -562,18 +530,14 @@ function App() {
               <span>Expense</span>
               <strong>- ₹12,650</strong>
             </div>
-
           </div>
         </div>
-
       </section>
 
       {/* FOOTER */}
 
       <footer className="footer">
-
         <div className="footer-top">
-
           <a href="#" className="brand">
             <div className="brand-icon">
               <Wallet size={22} />
@@ -585,14 +549,15 @@ function App() {
           </a>
 
           <p>
-            Make your money management simple.
-            Track every rupee, every day.
+            Make your money management simple. Track every rupee, every day.
           </p>
 
-          <a href="https://drive.google.com/uc?export=download&id=1KEltppVzKFkqQmukhulfAnl1nyL0mQnT" className="footer-download">
+          <a
+            href="https://github.com/Afrozbro/money-tracker-downloads/releases/download/v1.0.0/money_tracker.apk"
+            className="footer-download"
+          >
             Download App <Download size={16} />
           </a>
-
         </div>
 
         <div className="footer-bottom">
@@ -602,9 +567,7 @@ function App() {
 
           <span>Made with care ❤️</span>
         </div>
-
       </footer>
-
     </main>
   );
 }
